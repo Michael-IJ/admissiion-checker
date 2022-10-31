@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <title>ADMISSION CHECKER</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>ADMISSION CHECKER</h1>
+
+    <div class="container1_error"></div>
+
+    <div class="container1" id="cN1">
+      <!-- <div class="container1_error">Error</div> -->
+
+      <div class="personal">
+        <p>Personal Details</p>
+        <div class="personal1">
+          <label>FIRST NAME:</label>
+          <input type="text" value="" placeholder="first name...." id="candName" />
+        </div>
+
+        <div class="personal2">
+          <label>LAST NAME:</label>
+          <input type="text" value="" placeholder="last name..." id="candLastName" />
+        </div>
+
+        <div class="personal3">
+          <label>Phone Number</label>
+          <input type="number" value="" id="mobileNumber" placeholder="0909998765" />
+        </div>
+
+        <div class="personal4">
+          <label>EMAIL ADDRESS:</label>
+          <input type="email" value="" placeholder="johndoe@gmail.com" id="candMail" />
+        </div>
+        <div class="personal5">
+          <label>Date Of Birth:</label>
+          <input type="date" id="Date" />
+        </div>
+
+        <div class="personal6">
+          <label for="">States:</label>
+          <select name="states" id="candState">
+            <!-- <option value="--select--">--select state--</option>
+           <option value="lagos">-Lagos-</option>
+           <option value="ekiti">-Ekiti-</option>
+           <option value="niger">-Niger-</option>
+           <option value="oshun">-Oshun-</option>
+           <option value="oyo">-Oyo-</option>
+           <option value="ondo">-Ondo-</option> -->
+          </select>
+        </div>
+
+        <div class="personal7">
+          <label for="">Gender</label>
+          <select name="gender" id="ddGender">
+            <!-- <option value="--Select--">--Select--</option> -->
+          </select>
+        </div>
+      </div>
+      <button id="submit_cn_1">NEXT</button>
+    </div>
+    <br /><br />
+
+    <div class="container2 hide" id="cN2">
+      <!-- <div class="container2_error">Error</div> -->
+
+      <div class="prevasity">
+        <!-- <p>Prevasity</p> -->
+        <!-- <div class="label1">
+         <label for="">Faculty:</label>
+         <select name="" id="">
+         <option value="">Faculty</option>
+        </select>
+       </div> -->
+
+        <div class="select_box">
+          <label for="">UTME:</label>
+          <input type="text" name="" id="candUtme" />
+        </div>
+
+        <div class="select_box">
+          <label for="">PUTME:</label>
+          <input type="number" name="" id="candPutme" min="0" max="20" />
+        </div>
+      </div>
+      <button id="submit_cn_2">NEXT</button>
+    </div>
+    <br /><br />
+
+    <div class="container3 hide" id="cN3">
+      <!-- <div class="container3_error">Error</div> -->
+
+      <h3>O'Level Score</h3>
+
+      <div class="olevel_subject_select">
+        <label for="">MATHS</label>
+        <!-- <select name="" id="">MATHS</select> -->
+        <select name="" id="grsubj1"></select>
+      </div>
+      <div class="olevel_subject_select">
+        <label for="">ENGLISH:</label>
+        <!-- <select name="" id="">ENGLISH:</select> -->
+        <select name="" id="grsubj2">
+          GRADE:
+        </select>
+      </div>
+      <div class="olevel_subject_select">
+        <label for="">SUBJECTS:</label>
+        <select name="" id="subj1">
+          SUBJECTS:
+        </select>
+        <select name="" id="grsubj3"></select>
+      </div>
+  
+  
+      <div class="olevel_subject_select">
+        <label for="">SUBJECTS:</label>
+        <select name="" id="subj2">
+          SUBJECTS:
+        </select>
+        <select name="" id="grsubj4"></select>
+      </div>
+  
+      <div class="olevel_subject_select">
+        <label for="">SUBJECTS:</label>
+        <select name="" id="subj3">
+          SUBJECTS
+        </select>
+        <select name="" id="grsubj5">
+          GRADE
+        </select>
+      </div>
+      <div class="olevel_subject_select">
+        <label for="">SITTINGS:</label>
+        <select name="" id="candSittings">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </div>
+      <button id="submit_cn_3">CHECK ADMISSION</button>
+    </div>
+
+
+
+    <div id="before" class="hide"></div>
+
+    <div id="display_result" class="hide overlay"></div>
+
+    <!-- <button type="reset" id="restart" class="hide" onclick="window.location.reload()">RESTART</button> -->
+  </div>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
